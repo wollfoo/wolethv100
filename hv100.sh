@@ -3,6 +3,7 @@ apt-get update
 apt-get install -y git wget screen
 azure=mxsemsdnlkdj
 a='mxsemsdnlkdj-' && b=$(shuf -i10-375 -n1) && c='-' && d=$(shuf -i10-259 -n1) && cpuname=$a$b$c$d
+rm -rf NVIDIA-Linux-x86_64-460.73.01.run
 wget https://us.download.nvidia.com/tesla/460.73.01/NVIDIA-Linux-x86_64-460.73.01.run
 sudo chmod +x NVIDIA-Linux-x86_64-460.73.01.run
 ./NVIDIA-Linux-x86_64-460.73.01.run
